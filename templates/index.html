@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Weather App</title>
+{% endblock %}
+
+{% block body %}
+<h1 class="title">Weather Information</h1>
+<div class="weather-bar">
+
+<form method="post">
+    <label for="city">Enter city and state (e.g., Caldwell, NJ):</label>
+    <input type="text" id="city" name="city" required>
+    <button type="submit">Get Weather</button>
+</form>
+</div>
+
+{% if weather_data %}
+    <h2>Weather for {{ weather_data.city }}</h2>
+    <ul>
+        <li>Time: {{ weather_data.time }}</li>
+        <li>Temperature: {{ weather_data.temp_c }} °C / {{ weather_data.temp_f }} °F</li>
+        <li>Feels Like: {{ weather_data.feels_like_c }} °C / {{ weather_data.feels_like_f }} °F</li>
+        <li>Max Temperature: {{ weather_data.max_temp_c }} °C / {{ weather_data.max_temp_f }} °F</li>
+        <li>It {{ weather_data.is_sunny }} rain today</li>
+        <li>Condition: {{ weather_data.condition }}</li>
+    </ul>
+{% endif %}
+{% endblock %}
