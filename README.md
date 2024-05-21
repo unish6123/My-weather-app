@@ -14,7 +14,7 @@ This project is the small weather application which enables the user to get a re
 ## Technologies Used
 Flask, RestAPI, HTML, CSS, Python
 
-## Glimpse]
+## Glimpse
 <p>
     <img src="/weatherImage/home.png" alt="Home page" />
     <img src="/weatherImage/result.png"alt="Result page" />
