@@ -28,5 +28,13 @@ Flask, RestAPI, HTML, CSS, Python
 ```bash
 git clone https://github.com/unish6123/Final-Project.git
 ```
+- Open virtual environment.
+```bash
+source env/bin/activate
+```
+- Install the required packages.
+```bash
+pip install -r requirements.txt
+```
 - Open the repo in VSCode and run in live server
 - Open the port in your browser `localhost:5000/`
